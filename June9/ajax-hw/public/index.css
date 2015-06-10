@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+img {
+	width: 200px;
+	border-radius: 5px;
+}
+
+.gh-container {
+	font-family: Helvetica;
+	vertical-align: center;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	background: rgb(245, 245, 245);
+	border-bottom: solid 1px rgb(221, 221, 221);
+}
+
+/* Header */
+
+.right {
+	height: 50px;
+	color: rgb(51, 51, 51);
+	line-height: 50px;
+	display: inline-block;
+	position: relative;
+	left: 850px;
+}
+
+.plus {
+	display: inline-block;
+	padding-right: 10px
+}
+
+.notification {
+	display: inline-block;
+	padding-right: 10px
+}
+
+.setting {
+	display: inline-block;
+	padding-right: 10px
+}
+
+.logout {
+	display: inline-block;
+	padding-right: 10px
+}
+
+/* Content */
+
+.contentContainer {
+	display: inline-block;
+	position: relative;
+	left: 10%;
+}
+
+
+/* Left */
+
+.profile {
+	margin: 20px 10px;
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.email {
+	color: rgb(64, 120, 192);	
+}
+
+.name {
+	font-size: 26px;
+	font-weight: bold;
+	color: rgb(51, 51, 51);
+	line-height: 30px;
+}
+
+.login {
+	font-size: 20px;
+	font-weight: 200;
+	color: rgb(136, 136, 136);
+}
+
+.details {
+	border-top: solid 1px rgb(221, 221, 221);
+	margin-top: 10px;
+	padding: 15px 0px;
+}
+
+.company, .location, .email, .created, .blog {
+	font-size: 13px;
+	color: rgb(51, 51, 51);
+}
+
+/* Right */
+
+.gh-pages {
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px;
+	position: relative;
+}
+
+.repository {
+	border-top: solid 1px rgb(221, 221, 221);
+	padding: 30px 0px;
+}
+
+.fileName {
+	color: rgb(64, 120, 192);
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.fileName:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.update {
+	color: rgb(136, 136, 136);
+}
+
+.starsForks {
+	color: rgb(136, 136, 136);
+	font-size: 12px;
+	vertical-align: top;
+	float: right;
+	padding: 10px;
+}
+
+.language {
+	display: inline-block;
+}
+
+.stargazers {
+	display: inline-block;
+	padding-left: 8px;
+}
+
+.forks {
+	display: inline-block;
+	padding-left: 8px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ajax github</title>
+
+	<script src="libs/mocha.js"></script>
+    <script src="libs/chai.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/handlebars-v3.0.3.js"></script>
+    <script src="libs/moment.js"></script>
+    <link rel="stylesheet" href="libs/octicons/octicons.css">
+    <link href="index.css" rel="stylesheet"></href>
+</head>
+<body>
+
+	<div class="gh-container">
+
+		<div class="header">
+			<div class="left"></div>
+
+			<div class="right">
+				<div class="plus">
+					<span class="octicon octicon-squirrel"></span>
+				</div>
+				<div class="notification">
+					<span class="octicon octicon-inbox"></span>
+				</div>
+				<div class="setting">
+					<span class="octicon octicon-gear"></span>
+				</div>
+				<div class="logout">
+					<span class="octicon octicon-sign-out"></span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="contentContainer">
+			<div class="profile">
+
+			</div>
+
+			<div class="gh-pages">
+
+			</div>
+		</div>
+	</div>
+
+<!-- Templates -->
+
+	<template id="ghRepoTemplate">
+		
+		<div class="repository">
+			
+			<a href="#" class="fileName"> {{ name }} </a>
+			
+			<div class="starsForks">
+				<span class="language"> {{ language }}</span>
+				
+				<span class="stargazers">
+					<span class="octicon octicon-star"></span> {{ stargazers_count }} 
+					</span>
+				
+				<span class="forks">
+					<span class="octicon octicon-git-branch"></span> {{ forks }} 
+					</span>
+			</div>
+			<div class="update"> Updated on {{ updated_at }} </div>
+
+			
+
+		</div>
+	</template>
+
+	<template id="profileTemplate">
+
+		<div class="profileInfo">
+			
+			<div class="avatar"> 
+				<img src="{{ avatar_url }}"/> 
+			</div>
+			<div class="name"> {{ name }} </div>
+			<div class="login"> {{ login }} </div>
+			
+
+			<div class="details">
+				<div class="company"> {{ company }} </div>
+				<div class="location"> {{ location }} </div>
+				<div class="email"> {{ email }} </div>
+				<div class="created">
+					<span class="octicon octicon-clock"></span> Joined on {{ created_at }} 
+				</div>
+				<div class="blog"> {{ blog }} </div>
+			</div>
+		</div>
+
+	</template>
+
+<!-- End of Templates -->
+
+	<script src="ajax-gh.js"></script>
+</body>
+</html>
